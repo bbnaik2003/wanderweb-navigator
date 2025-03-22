@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Coffee, Utensils, Camera, Park, Museum } from 'lucide-react';
+import { Search, Coffee, Utensils, Camera, Landmark, Building } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import PlaceCard from './PlaceCard';
@@ -11,8 +11,8 @@ const categories = [
   { id: 'all', name: 'All', icon: <Coffee className="h-4 w-4" /> },
   { id: 'restaurants', name: 'Restaurants', icon: <Utensils className="h-4 w-4" /> },
   { id: 'attractions', name: 'Attractions', icon: <Camera className="h-4 w-4" /> },
-  { id: 'parks', name: 'Parks', icon: <Park className="h-4 w-4" /> },
-  { id: 'museums', name: 'Museums', icon: <Museum className="h-4 w-4" /> },
+  { id: 'parks', name: 'Parks', icon: <Landmark className="h-4 w-4" /> },
+  { id: 'museums', name: 'Museums', icon: <Building className="h-4 w-4" /> },
 ];
 
 const PlaceRecommendation = () => {
